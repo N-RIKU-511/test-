@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 description : "This is meta description"
 date: {{ .Date }}
-draft: true # 反映させる時はfalseに変えるかコメントアウト
+draft: false # 反映させる時はfalseに変えるかコメントアウト
 comments: true
 adsense: false
 archives: ["{{ dateFormat "2006" .Date }}", "{{ dateFormat "2006-01" .Date }}"]
